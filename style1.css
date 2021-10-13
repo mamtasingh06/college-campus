@@ -1,0 +1,399 @@
+@charset "utf-8";
+/* CSS Document */
+/* start header  */
+* {
+ margin:0;
+ padding:0;
+ font-family: 'Dosis', sans-serif;
+ 
+}
+#header
+{
+min-height:100vh;
+width:100%;
+background-image:linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(                                         "images/nm2.png");
+background-position:center;
+background-size:cover;
+position:relative;
+
+}
+
+nav
+{
+display:flex;
+padding:2% 6%;
+justify-content:space-between;
+align-items:center;
+}
+.nav-links{
+  flex:1;
+  text-align:right;
+}
+.nav-links ul li{
+   list-style:none;
+   display:inline-block;
+   padding:8px 12px;
+   position:relative;
+
+}
+
+.nav-links ul li a{
+color:#FFFFFF;
+font-size:20px;
+text-decoration:none;
+}
+.nav-links ul li a:hover{
+
+ color:red;
+}
+
+.text-box{
+  width:90%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  color:#FFFFFF;
+  text-align:center;
+}
+.text-box h3{
+  font-size:50px;
+}
+.text-box p{
+  margin:10px 0 40px;
+  color:#FFFFFF;
+  font-size:30px;
+}
+ .hero-btn{
+ text-decoration:none;
+ display:inline-block;
+ font-size:18px;
+ border:1px solid #fff;
+ padding:12px 40px;
+ position:relative;
+ background:transparent;
+ cursor:pointer;
+ color:#FFFFFF;
+}
+ .hero-btn:hover{
+border:1px solid #FF0000;
+background:#FF0000;
+}
+nav .fas{
+  display:none;
+}
+@media(max-width: 1080px){
+   .text-box h3{
+   font-size:20px;
+   
+}
+.nav-links ul li{
+  display:block;
+}
+.nav-links ul li a{
+ font-size:50px;
+}
+.nav-links{
+position:absolute;
+background:#CC0066;
+height:100vh;
+width:400px;
+top:0;
+right:-400px;
+text-align:left;
+z-index:2;
+transition:1s;
+}
+nav .fas{
+display:block;
+color:#FFFFFF;
+margin:10px;
+font-size:60px;
+cursor:pointer;
+}
+.nav-links ul{
+  padding:40px;
+}
+}
+/*  End header  */
+
+/*  Start cources  */
+     
+ #Courses{
+ width:80%;
+ margin:auto;
+ text-align:center;
+ padding-top:100px;
+ }
+ h2{
+  font-size:36px;
+  font-weight:600;
+ }
+.row{
+ margin-top:5%;
+ display:flex;
+ justify-content:space-between;
+}
+.course-col{
+ flex-basis:31%;
+ box-sizing:border-box;
+ margin-bottom:5%;
+ border-radius:10px;
+ padding:20px 12px;
+ background:#0000FF;
+
+}
+.course-col:hover{
+  box-shadow:0 0 25px 0 rgba(255, 0, 0,0.3);
+}
+.course-col > h3{
+color:#FFFFFF;
+}
+.course-col > p{
+color:#FFFFFF;
+}
+@media(max-width: 1080px){
+ .row{
+  flex-direction:column;
+}
+}
+/*   End of course   */
+
+/*  Start of campus  */
+ #Campus{
+  width:100%;
+  margin:auto;
+  padding-top:50px;
+  text-align:center;
+ }
+ .Campus-col{
+  width:90%;
+  margin:50px auto 50px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap:20px;
+  
+ }
+ .Campus-col > img{
+  width:100%;
+  cursor:pointer;
+  transition:1s;
+ }
+ .Campus-col > img{
+ width:380px;
+ height:300px;
+ }
+ .Campus-col > img:hover{
+transform:scale(0.8) rotate(-15deg);
+border-radius:20px;
+box-shadow:0px 30px 75px rgba(68, 77, 136, 0.2);
+}
+.full-image{
+width:100%;
+height:100vh;
+background:rgba(0, 0, 0, 0.9);
+position:fixed;
+top:0px;
+left:0px;
+display:none;
+align-items:center;
+justify-content:center;
+z-index:100;
+}
+.full-image > img{
+ width:90%;
+ max-width:500px;
+ max-height:400px;
+}
+.full-image > span{
+position:absolute;
+top:5%;
+right:5%;
+font-size:20px;
+color:#FFFFFF;
+cursor:pointer;
+}
+ 
+ @media(max-width: 1080px){
+ .Campus-col{
+  width:30%;
+  display:grid;
+  grid-template-columns:1fr;
+  }
+}
+ 
+ /*  End of campus  */
+ 
+/* Start of facilities */
+
+.Facilities{
+  width:100%;
+  margin:auto;
+  padding-top:50px;
+  text-align:center;
+ }
+ .Campus-col1{
+  width:90%;
+  margin:50px auto 50px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-gap:20px;
+  
+ }
+ .Campus-col1 > img{
+  width:100%;
+  cursor:pointer;
+  transition:1s;
+ }
+ .Campus-col1 > img{
+ width:380px;
+ height:300px;
+ }
+ .Campus-col1 > img:hover{
+transform:scale(0.8) rotate(-15deg);
+border-radius:20px;
+box-shadow:0px 30px 75px rgba(68, 77, 136, 0.2);
+}
+.full-image1{
+width:100%;
+height:100vh;
+background:rgba(0, 0, 0, 0.9);
+position:fixed;
+top:0px;
+left:0px;
+display:none;
+align-items:center;
+justify-content:center;
+z-index:100;
+}
+.full-image1 > img{
+ width:90%;
+ max-width:500px;
+ max-height:400px;
+}
+.full-image1 > span{
+position:absolute;
+top:5%;
+right:5%;
+font-size:20px;
+color:#FFFFFF;
+cursor:pointer;
+}
+ @media(max-width: 1080px){
+ .Campus-col1{
+  width:30%;
+  display:grid;
+  grid-template-columns:1fr;
+  
+}
+}
+ 
+/* End of facilities */
+
+/* Start of testimonial */
+
+.Testimonials{
+  width:80%;
+  margin:auto;
+  padding-top:50px;
+  text-align:center;
+ }
+ .Testdiv{
+  display:flex;
+justify-content:space-around;
+ }
+ .Testimonials-col{
+  flex-basis:30%;
+  margin-top:50px;
+  margin-bottom:5%;
+  text-align:center;
+  border-radius:10px;
+  background:#0000FF;
+  padding:25px;
+  cursor:pointer; 
+ 
+ }
+ .Testimonials-col img{
+  height:120px;
+  margin-left:5px;
+  margin-right:30px;
+  border-radius:50%;:
+ }
+  .Testimonials-col p{
+  padding:0;
+  margin-top:10px;
+  color:#FFFFFF;
+  }
+  .Testimonials-col h5{
+   margin-top:15px;
+   color:#FFFFFF;
+  }
+ .Testimonials-col h6{
+ color:#FFFFFF;
+ }
+  
+    .Testimonials-col:hover{
+	 background:#006600;
+	}
+	.Testimonials-col .fas{
+	 color:#FFCC33;
+	}
+	@media(max-width: 1080px){
+ .Testdiv{
+  flex-direction:column;
+}
+.Testimonials-col p{
+ font-size:14px;
+}
+.Testimonials-col h5{
+font-size:13px;
+}
+}
+  /* End of testimonial */
+
+ /* Start of contact */
+ 
+ #Contact{
+ width:80%;
+ margin:100px auto;
+ background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+                  url(images/nm25.png);
+ background-position:center;
+ background-size:cover;
+ border-radius:10px;
+ text-align:center;
+ padding:100px 0;
+ color:#FFFFFF;
+ }
+ @media(max-width: 1080px){
+ #Contact{
+   font-size:20px;
+ }
+ #Contact > h2{
+ font-size:25px;
+ }
+ }
+ 
+ 
+  /* End of contact */
+  
+  #Footer{
+ width:100%;
+ text-align:center;
+ padding:30px 0;
+ font-size:40px;
+ }
+ #Footer h4{
+ margin-top:25px;
+ margin-bottom:20px;
+ font-weight:600;
+ }
+ .fab{
+ margin:0 14px;
+ padding:30px 0;
+ cursor:pointer;
+ }
+ .arrow{
+ text-align:right;
+ margin-right:40px;
+ }

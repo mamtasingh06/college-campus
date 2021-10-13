@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My College Website Design</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/7d007aa777.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+ <!--Start of Header-->
+  <section id="header">
+     <nav>
+       
+       <a href="project2.html"><img src="images/logonm.png" style="width:80px; height:80px;"/></a>
+         <div class="nav-links" id="navLinks" >
+           <i class="fas fa-window-close" onclick="hideMenu()"></i>
+           <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#Footer">About</a></li>
+             <li><a href="#Courses">Course</a></li>
+             <li><a href="#Campus">Blog</a></li>
+             <li><a href="#Contact">Contact</a></li>
+           </ul>
+        </div>
+       <i class="fas fa-bars" onclick="showMenu()"></i>     </nav>
+        <div class="text-box"> 
+            <h3>My college</h3>
+              <p>Making website is now easy. You just need to learn HTML, CSS<br />and                          JavaScript and you are good to go.</p>
+                 <a class="hero-btn" href=""> Visit us to know more</a>        </div>
+</section> 
+  <!--End of header-->
+  
+  <!--Start of Course-->
+      <section id="Courses">
+        <a href="#header" style="text-decoration:none; color:#000000"> <h2>Courses we offer</h2></a>
+        <div class="row">
+           <div class="course-col" style="margin:10px">
+               <h3>Diploma</h3>
+               &nbsp;
+                 <p>Diploma in Engineering is a professional course which is of a total of 3                    years duration</p>
+           </div>
+           <div class="course-col" style="margin:10px">
+               <h3>Btech</h3>
+                &nbsp;
+                 <p>Bachelor of Technology course is an undergraduate degree awarded to students                    after 4 years of engineering study</p>
+           </div>
+           <div class="course-col" style="margin:10px">
+               <h3>Mtech</h3>
+                &nbsp;
+                 <p>Master of Technology course is a postgraduate degree awarded to B.Tech                    students after 2 years of engineering study</p>
+           </div>
+           <div class="course-col" style="margin:10px">
+               <h3>MBA</h3>
+                &nbsp;
+                 <p>Masters of Business Administration is a 2 years postgraduate management                    degree awarded to students after graduating from a relevant course</p>
+           </div>
+        </div>       
+  
+      </section>
+     
+  <!-- End of course -->
+  
+  <!-- Start of campus  -->
+  
+     <section id="Campus">
+      <a href="#header" style="text-decoration:none; color:#000000">
+      <h2>My College Campus</h2></a>
+      <div class="full-image" id="fullImgbox">
+        <img src="images/nm15.jpg" id="fullImg" />
+        <span onclick="closefullImg()">X</span>
+      </div>
+      <div class="Campus-col">
+          <img src="images/nm15.jpg" onclick="openfullImg(this.src)"/>
+          <img src="images/nm11.jpg" onclick="openfullImg(this.src)"/>
+          <img src="images/nm14.jpg" onclick="openfullImg(this.src)"/>
+          <img src="images/nm3.jpg" onclick="openfullImg(this.src)"/>
+          <img src="images/nm6.jpg" onclick="openfullImg(this.src)"/>
+          <img src="images/nm4.png" onclick="openfullImg(this.src)"/>
+          <img src="images/nm1.jpg" onclick="openfullImg(this.src)"/>
+          <img src="images/nm13.jpg" onclick="openfullImg(this.src)"/>
+          <img src="images/nm18.jpg" onclick="openfullImg(this.src)"/>
+       </div>
+     </section>
+     
+     <!-- End of campus  -->
+     
+     
+     <!-- Start of facilities  -->
+     
+     <<section class="Facilities">
+       <a href="#header" style="text-decoration:none; color:#000000"><h2>Our Facilities</h2></a>
+        <div class="full-image1" id="fullImgbox1">
+        <img src="images/nm3.jpg" id="fullImg1" />
+        <span onclick="closefullImg1()">X</span>
+        </div>
+        <div class="Campus-col1">
+          <img src="images/nm3.jpg" onclick="openfullImg1(this.src)"/>
+          <img src="images/nm4.png" onclick="openfullImg1(this.src)"/>
+          <img src="images/nm6.jpg" onclick="openfullImg1(this.src)"/>
+          <img src="images/nm16.jpeg" onclick="openfullImg1(this.src)"/>
+          <img src="images/nm19.jpg" onclick="openfullImg1(this.src)"/>
+          <img src="images/nm20.jpg" onclick="openfullImg1(this.src)"/>
+       </div>
+     </section>
+     
+      <!-- End of facilities  -->
+      
+      <!-- Start of testimonials  -->
+      
+    <section class="Testimonials">
+       <h2>What Our Students Say </h2>
+       <div class="Testdiv">
+         <div class="Testimonials-col">
+           <img src="images/nm22.jpg" alt="stu-pic" />
+           <div>
+             <p>"My tenure at NMIET was worthy one that not only made me professional achiever                 but also taught me the philosophy of life. The expousre NMIET gives to its 
+                 students makes them confident to face various challenges in their career and
+                 life. I am highly obliged to the NMIET family for what i am today" 
+             </p>
+             
+             <h5>SIDDARTH SHANKAR SWAIN, IAS</h5> 
+             <h6>Civil Servant, Govt. of Odisha<br />
+              B.tech, CSE, Class of 2010</h6>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star-half-alt"></i>   
+           </div>
+         </div>
+        <div class="Testimonials-col">
+           <img src="images/nm23.jpg" alt="stu-pic" />
+           <div>
+             <p>"I am really proud of my alma-mater because of which I got an opportunity where                 I rub shoulders with the veterans in my industry. Top notch technical education                 in the most conducive and student freindly environment is the crux of NMIET " 
+             </p>
+           
+             <h5>RUCHI NANDITA</h5> 
+             <h6>Project Manager, Whishworks, Hamsphire</h6>
+             <h6> B.tech, CSE, Class of 2008</h6> 
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="far fa-star"></i>  
+           </div>
+         </div>
+       </div>
+    </section>
+    
+    <!-- End of testimonials  -->
+    
+    <!-- Start of Contact -->
+    
+    <section id="Contact">
+      <h2>Enroll For Our Various Courses <br />Anywhere From The World</h2>
+      <a href="" class="hero-btn">Contact Us</a> 
+   </section>
+    
+    <!-- End of Contact -->
+    
+     <!--start of Footer-->
+       
+    <section id="Footer">
+      <h4>About Us</h4>
+      <div class="icons">
+      <a href="http://www.facebook.com"><i class="fab fa-facebook" style="color:#0066FF"></i></a>
+      <a href="http://www.twitter.com"><i class="fab fa-twitter" style="color:#0099FF"></i></a>
+      <a href="http://www.email.com"><i class="far fa-envelope" style="color:#FF0000"></i></a>
+      <a href="http://www.youtube.com"><i class="fab fa-youtube" style="color:#FF0000"></i></a>
+      <a href="http://www.whatsapp.com"><i class="fab fa-whatsapp" style="color:#00CC00"></i></a>
+      <div class="arrow">
+         <div>
+          <i class="fas fa-arrow-up"></i>
+         </div> 
+         
+         <a href="#header">Top</a>
+         
+          </div>
+      </div>
+     
+    </section>
+      <!--End of Footer-->
+      
+  <!--start script of toggle menu-->
+  
+       
+       
+  <!--End script of toggle menu-->
+  <script src="project2.js"></script>
+       
+</body>
+</html>
